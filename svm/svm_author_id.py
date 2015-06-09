@@ -22,8 +22,8 @@ t0 = time()
 features_train, features_test, labels_train, labels_test = preprocess()
 
 # Smaller training set  1% 
-# features_train = features_train[:len(features_train)/100] 
-# labels_train = labels_train[:len(labels_train)/100]
+features_train = features_train[:len(features_train)/100] 
+labels_train = labels_train[:len(labels_train)/100]
 
 #########################################################
 ### your code goes here ###
@@ -70,7 +70,7 @@ print 'res', res
 print len(pred)
 #########################################################
 
-# Different C parameter
+# Different C parameter in %1 Data Set
 # 10.0 : 0.616040955631
 # 100.0 : 0.616040955631
 # 1000.0 : 0.821387940842
